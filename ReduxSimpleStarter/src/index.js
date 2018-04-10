@@ -7,23 +7,16 @@ import VideoList from './components/video_list';
 import VideoDetail  from './components/video_detail';
 const API_KEY = 'AIzaSyAXu8HHGzjgKn8ekrZ28OP8SLGxzSj1eK0';
 
-
-
-
 //  Create a new component. This component should produce some HTML
 // This is class component
 class App extends Component  {
   constructor(props) {
     super(props);
-
-    this.state = {
+    this.state = { 
       videos:[],
       selectedVideo: null
     };
-
     this.videoSearch('surfbaords');
-
-
   }  
 
   videoSearch(term) {
